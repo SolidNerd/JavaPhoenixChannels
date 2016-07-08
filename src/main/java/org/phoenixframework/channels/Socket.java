@@ -375,13 +375,6 @@ public class Socket {
         }
     }
 
-    public void setSSLSocketFactory(SSLSocketFactory sslSocketFactory) {
-        httpClient.setSslSocketFactory(sslSocketFactory);
-    }
-
-    public void setHostnameVerifier(HostnameVerifier hostnameVerifier) {
-        httpClient.setHostnameVerifier(hostnameVerifier);
-    }
 
     private void flushSendBuffer() {
         while (this.isConnected() && !this.sendBuffer.isEmpty()) {
