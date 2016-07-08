@@ -4,16 +4,12 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.squareup.okhttp.OkHttpClient;
-import com.squareup.okhttp.Request;
-import com.squareup.okhttp.RequestBody;
-import com.squareup.okhttp.Response;
-import com.squareup.okhttp.ResponseBody;
-import com.squareup.okhttp.ws.WebSocket;
-import com.squareup.okhttp.ws.WebSocketCall;
-import com.squareup.okhttp.ws.WebSocketListener;
-import javax.net.ssl.HostnameVerifier;
-import javax.net.ssl.SSLSocketFactory;
+
+
+import okhttp3.*;
+import okhttp3.ws.WebSocket;
+import okhttp3.ws.WebSocketCall;
+import okhttp3.ws.WebSocketListener;
 import okio.Buffer;
 
 import java.io.IOException;
